@@ -1,12 +1,13 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
-S0 = 100
+S0 = 115
 u = 1.2
 d = 0.8
 r = 0.05
 K = 100
-T = 20
+T = 5
 U = 10
 
 def build_price_tree(S0, u, d, T):
@@ -170,5 +171,13 @@ legend_d = axs[1, 1].legend(handles=[
 axs[1, 1].add_artist(legend_u)
 axs[1, 1].grid(True)
 
+# --- SAVE PLOT (place at the very end, after all plotting) ---
+import os
+out_dir = os.path.join(os.path.dirname(__file__), "figures")
+os.makedirs(out_dir, exist_ok=True)
+out_path = os.path.join(out_dir, "chooser_plots.png")
+
 plt.tight_layout()
-plt.show()
+plt.savefig(out_path, dpi=200)
+print(f"[OK] Saved plot to: {out_path}")
+# plt.show()  # 需要弹窗再看就解开；不看就留着保存即可
