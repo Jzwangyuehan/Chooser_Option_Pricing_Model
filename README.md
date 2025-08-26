@@ -8,6 +8,10 @@ Python implementations for pricing **Chooser options** on a CRR binomial tree, w
 - `Chooser_Option_with_deltaT.py` – CRR pricer with explicit Δt handling
 - `Longstaff_Schwartz.py` – LSM example for American-style options
 - `requirements.txt` – runtime deps (`numpy`, `matplotlib`)
+  
+- ## Notes
+- CRR risk-neutral probability: `q = (1 + r - d) / (u - d)` （这里的 r、u、d 是“每一步”的参数）
+- At decision time `U`, the chooser value is `max(C(U), P(U))`，随后再做风险中性折现/回溯到 `t=0`。
 
 ## Install
 ```bash
