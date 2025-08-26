@@ -13,8 +13,3 @@ Python implementations for pricing **Chooser options** on a CRR binomial tree, w
 - CRR risk-neutral probability: `q = (1 + r - d) / (u - d)`（r、u、d 为“每一步”的参数）
 - At decision time `U`, the chooser value is `max(C(U), P(U))`，随后做风险中性折现/回溯至 `t=0`。
 
-## Install
-```bash
-python3 -m venv .venv
-source .venv/bin/activate    # Windows: .\.venv\Scripts\activate
-python -m pip install -r requirements.txt
