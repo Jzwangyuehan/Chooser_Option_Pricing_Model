@@ -18,3 +18,6 @@ Python implementations for pricing **Chooser options** on a CRR binomial tree, w
 python3 -m venv .venv
 source .venv/bin/activate   # Windows: .\.venv\Scripts\activate
 python -m pip install -r requirements.txt# Chooser_Option_Pricing_Model
+
+## Sample plot
+![Chooser option curves](figures/chooser_plots.png)
