@@ -21,3 +21,6 @@ python -m pip install -r requirements.txt# Chooser_Option_Pricing_Model
 
 ## Sample plot
 ![Chooser option curves](figures/chooser_plots.png)
+
+## Sample plot
+![Chooser option curves](figures/chooser_plots.png)
