@@ -19,4 +19,4 @@ Python implementations for pricing **Chooser options** on a CRR binomial tree, w
 
 ![Δt](figures/chooser_with_deltat_plots.png)
 
-![LSM](figures/lsm_plots.png)
+
