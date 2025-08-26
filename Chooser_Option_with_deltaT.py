@@ -97,4 +97,11 @@ plt.text(n_range[-1], analytical_price, '  ← Target of Price Convergence', col
 plt.text(n_range[2], binomial_prices[2] + 0.1, 'Larger n, smaller Δt, price approaches true value →', color='darkgreen',
          va='bottom', ha='left', fontsize=11)
 
-plt.show()
+# plt.show()
+
+import os
+out_dir = os.path.join(os.path.dirname(__file__), "figures")
+os.makedirs(out_dir, exist_ok=True)
+plt.tight_layout()
+plt.savefig(os.path.join(out_dir, "chooser_with_deltat_plots.png"), dpi=200)
+print(os.path.join(out_dir, "chooser_with_deltat_plots.png"))
